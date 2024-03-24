@@ -28,7 +28,7 @@ hr {
   color: hsl(30, 18%, 87%);
 }
 .page {
-  width: 60%;
+  max-width: 60%;
   height: auto;
   background-color: hsl(0, 0%, 100%);
   padding: 20px;
@@ -38,7 +38,7 @@ hr {
 }
 
 .top-img {
-  width: 100%;
+  max-width: 100%;
   height: 30vw;
   background-color: hsl(30, 54%, 90%);
   border-radius: 18px;
@@ -46,7 +46,7 @@ hr {
 }
 
 .top-img img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   border-radius: 18px;
 }
@@ -144,4 +144,23 @@ hr {
 .content5 td {
   color: hsl(14, 45%, 36%);
   font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+   .page{  
+      font-size: 11px;
+    margin-top: 0;
+    max-width: 100%;
+    padding: 0px;
+   }
+   .top-img{
+    height: 183px;
+    border-radius: 0px;
+   }
+   .content4{
+    height: 71vh;
+   }
+   .content5 tr{
+    gap: 191px;
+   }
 }
